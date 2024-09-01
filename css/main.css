@@ -1929,28 +1929,45 @@ header .logo a {
  * Produções - Estilo dos quadros de produções
  * -------------------------------------------------------------------
  */
- .producoes-container {
+ /* Estilos para a seção de produções */
+.producoes-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Espaçamento entre os quadros */
     justify-content: center; /* Centraliza os quadros na tela */
 }
 
-.quadro {
-    border: 1px solid #ddd;
+.producoes-container .quadro {
+    border: 1px solid #ddd; /* Borda visível */
     padding: 15px;
     border-radius: 8px;
     flex: 1 1 calc(50% - 40px); /* Define a largura dos quadros */
     max-width: 500px; /* Limita a largura máxima dos quadros */
     box-sizing: border-box;
     margin: 10px;
+    background-color: #fff; /* Fundo branco para destacar o conteúdo */
 }
 
+/* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
-    .quadro {
+    .producoes-container .quadro {
         flex: 1 1 100%; /* Ajusta para uma coluna no mobile */
         max-width: 100%;
     }
+}
+
+/* Força a exibição da borda */
+.producoes-container .quadro img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Ajusta a imagem dentro do quadro */
+    border-radius: 4px; /* Borda arredondada da imagem, se desejar */
+}
+
+.producoes-container .quadro p {
+    margin-top: 10px;
+    text-align: center;
+    color: #333; /* Cor do texto para melhor legibilidade */
 }
 
 
