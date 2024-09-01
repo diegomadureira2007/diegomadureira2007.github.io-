@@ -1938,14 +1938,14 @@ header .logo a {
 }
 
 .producoes-container .quadro {
-    border: 1px solid #ddd; /* Borda visível */
+    border: 1px solid #ddd !important; /* Força a exibição da borda */
     padding: 15px;
     border-radius: 8px;
-    flex: 1 1 calc(50% - 40px); /* Define a largura dos quadros */
-    max-width: 500px; /* Limita a largura máxima dos quadros */
+    flex: 1 1 calc(50% - 40px);
+    max-width: 500px;
     box-sizing: border-box;
     margin: 10px;
-    background-color: #fff; /* Fundo branco para destacar o conteúdo */
+    background-color: #fff;
 }
 
 /* Ajustes para dispositivos móveis */
